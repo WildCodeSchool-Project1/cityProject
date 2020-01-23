@@ -2,6 +2,7 @@ body{
     font-family: 'Alata', sans-serif;
 }
 
+/*landing page*/
 div{
     display: block;
 }
@@ -31,6 +32,7 @@ div{
     box-shadow: inset 29px 33px 154px 400px rgba(255, 255, 255, 0.527);
 }
 
+ /* Bootstrap container linking to pages in the website  */
 .box_text{
   display: flex;
   flex-direction: column;
@@ -51,6 +53,7 @@ div{
   text-align: center;
 }
 
+/* Media Query for Bootstrap container linking to pages in the website  */
 @media only screen and (max-width: 576px){
   .box_text h1{
     font-size: 10vw;
@@ -88,26 +91,6 @@ h2{
     font-size: 5vw;
   }
 }
-/* .landing_text container{
-    margin-left: none;
-}
-.landing-text, h1{
-    color: rgb(9, 9, 107);
-    font-size: 2em;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin-top: 140px;
-    padding: 60px;
-}
-
-.landing-text, h2{
-    color:  rgb(9, 9, 107);
-    font-size: 1em;
-    font-weight: bolder;
-    margin-top: -130px;
-    padding: 70px;
-    letter-spacing: 5px;
-} */
 
 .container-fluid{
     padding: 0;
@@ -133,6 +116,7 @@ h2{
     padding-right:10px;
   }
 
+ /*  Navigation Bar */
 .navbar-light .navbar-brand{
     color: rgb(1, 1, 70);
     font-size: 1.3em;
@@ -154,12 +138,13 @@ h2{
     justify-content: flex-end;
 }
 
-img {
+
+/* img {
     margin-top: -50px;
     margin-left: -10px;
     width: 45%;
     height: 45%;
-}
+} */
 
 .yellow{
     background-color: rgba(228, 228, 69, 0.849);
@@ -238,6 +223,8 @@ img {
   color: rgb(9, 9, 107);
 } 
 
+
+/* Footer */
   .footer-placing {
     background-color:  rgb(9, 9, 107);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -294,7 +281,6 @@ img {
     display: inline-block;
     width: 35px;
     height: 35px;
-    border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
     text-align: center;
@@ -321,3 +307,102 @@ img {
       line-height: 1.8;
     }
   }
+
+  /* contact form */
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    resize: vertical;
+    border-radius: 5px;
+  }
+  
+  input[type=submit] {
+    background-color:white;
+    color:rgb(9, 9, 107);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #country{
+    border-color:  none;
+    color: rgb(9, 9, 107);
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(9, 9, 107);
+    color:white;
+  }
+  
+  /* Style the container/contact section */
+  .contactUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-style: none;
+    height:100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("/img/copenhagen-night.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 29px 33px 154px 400px rgba(255, 255, 255, 0.527);
+}
+  
+  .container {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10%;
+    margin-top: 15%;
+    background-color:rgba(228, 228, 69, 0.849);
+    box-shadow: 0 0 20px #000000b3;
+    max-width: 600px;
+  }
+  
+  @media screen and (max-width: 600px) {
+  .container {
+    margin-top: 20%;
+  }
+  }
+  /* Create two columns that float next to eachother */
+  .column {
+    width: 90%;
+    margin-top: 6px;
+    padding: 15px;
+  }
+
+  .contact-heading h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding-top: 10px;
+  }
+  
+  .contact-box{
+    display: flex;
+    justify-content: center;
+  }
+  /* Clear floats after the columns */
+  .contact-box:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+ 
