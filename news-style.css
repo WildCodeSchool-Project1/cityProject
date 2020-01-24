@@ -27,7 +27,7 @@ div{
   color: white;
   font-style: italic;
   letter-spacing: -0.01vw;
-  height: 50%;
+  height: 100vh;
 }
 
 
@@ -52,7 +52,7 @@ div{
 }
 
 .box{
-  width: 50%;
+  width: 50vh;
 }
 
 
