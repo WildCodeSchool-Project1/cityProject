@@ -48,7 +48,7 @@ div{
   height: 100vh;
   width: 100%;
   margin: 0;
-  background-color: rgb (12, 211, 102, 0.849));
+  background-color: rgb (12, 211, 102, 0.849);
 }
 
 .box{
@@ -142,9 +142,9 @@ div{
   margin-bottom: 0;
 }
 
-.todo{
+/* .todo{
   height: 100vh;
-}
+} */
 
 * Footer */
   .footer-placing {
