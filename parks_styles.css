@@ -1,0 +1,267 @@
+.body{
+  font:'Alata', san serif;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.navbar-light .navbar-brand{
+  color: rgb(1, 1, 70);
+  font-size: 1.3em;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+  color: rgb(1, 1, 70);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color:  rgb(1, 1, 70);
+  font-size: 1.3em;
+}
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: flex-end;
+}
+
+.fixed {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.container-fluid {
+  height: 100vh;
+}
+.contenido_izq {
+  width: 50vw;
+  height: 100vh;
+  background-image: url(/img/800px-Botanisk_have.jpg);
+  box-shadow: inset 29px 33px 154px 200px rgba(255, 255, 255, 0.57);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.frase_arriba {
+  width: fit-content;
+  height: fit-content;
+  background-color: khaki;
+  border: 1px solid yellow;
+  font-family: "Alata", sans-serif;
+  font-size: 1.5vw;
+}
+
+.nombre_seccion {
+  width: fit-content;
+  height: fit-content;
+  font-size: 5vw;
+  font-family: "Alata", sans-serif;
+  font-style: italic;
+  color: white;
+  letter-spacing: -0.01em;
+}
+
+.frase_abajo {
+  width: fit-content;
+  height: fit-content;
+  background-color: khaki;
+  font-size: 1.5vw;
+  font-family: "Alata", sans-serif;
+  border: 1px solid yellow;
+  /* height: 25%; */
+}
+
+.contenido_drch {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 8em;
+}
+.green{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  width: 100%;
+  height: 70vh;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+/* .flip-card-front {
+  background-image: url(/img/Botanical_garden_180c.png);
+} */
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(228, 228, 69, 0.849);
+}
+
+.flip-card-back h2 {
+  padding: 1px;
+  margin: 18px 0px 0px 0px;
+  font-size: 2rem;
+  font-family: 'Kaushan Script', cursive;
+
+}
+
+grande {
+  width:30%;
+  padding: 1px;
+  margin: 18px 0px 0px 0px;
+  font-size: 0.8rem;
+  font-family: 'Kaushan Script', cursive;
+
+}
+
+
+/* .flip-card-back p{
+  font-size: 0,3rem;
+} */
+
+.flip-card-back a{
+  font-size: 2rem; 
+
+  font-family: 'Kaushan Script', cursive;
+
+}
+
+.texto_parques p::first-letter{
+  float: left;
+  font-size: 4rem;
+  line-height: 3rem;
+}
+
+* Footer */
+  .footer-placing {
+    background-color:  rgb(9, 9, 107);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding: 5px 5px;
+  }
+  
+  .footer-placing .footer-left p {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-placing p.footer-links {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-placing p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-placing .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-placing .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-placing .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-placing .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  
+  .footer-placing .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-placing p.footer-links a:hover{text-decoration:underline;}
+  .bg-blue{
+    background-color:none;
+  }
+
