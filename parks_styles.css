@@ -39,7 +39,7 @@
 .contenido_izq {
   width: 50vw;
   height: 100vh;
-  background-image: url(/img/800px-Botanisk_have.jpg);
+  background-image: url(../img/800px-Botanisk_have.jpg);
   box-shadow: inset 29px 33px 154px 200px rgba(255, 255, 255, 0.57);
   background-repeat: no-repeat;
   background-size: cover;
@@ -285,9 +285,6 @@
     font-size: 5vw;
   }
 
-  .contenido_izq {
-    height: 100vh;
-  }
   .texto_parques p {
     padding-bottom: 6vw;
     text-align: justify;
