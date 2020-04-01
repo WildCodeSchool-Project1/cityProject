@@ -29,9 +29,10 @@ div {
 }
 
 .sub_heading {
-  font-size: 2vw;
+  font-size: 1.03em;
   color: white;
   text-align: center;
+  margin: 15% 0 0 0;
 }
 
 .container-fluid {
@@ -77,14 +78,14 @@ div {
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
-
+/* 
 .yellow {
   background-color: rgba(228, 228, 69, 0.849);
-}
+} */
 
-.sub_heading {
+/* .sub_heading {
   margin-top: 5%;
-}
+} */
 
 /* mi página news */
 
@@ -243,13 +244,13 @@ div {
   }
 
   .yellow {
-    height: 100vh;
+    height: 100%;
   }
 }
 
 .yellow {
   background-color: rgba(228, 228, 69, 0.849);
-  height: 50%;
+  height: 100vh;
 }
 
 .footer-placing {
