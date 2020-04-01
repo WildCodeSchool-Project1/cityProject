@@ -285,6 +285,9 @@
     font-size: 5vw;
   }
 
+  .contenido_izq {
+    height: 100vh;
+  }
   .texto_parques p {
     padding-bottom: 6vw;
     text-align: justify;
