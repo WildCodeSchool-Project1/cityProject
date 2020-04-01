@@ -27,7 +27,7 @@ div{
     height: 100vh;
     width: 100%;
     margin: 0 auto;
-    background-image: url("/img/copenhagen-night.jpg");
+    background-image: url("./img/copenhagen-night.jpg");
     background-repeat: no-repeat;
     box-shadow: inset 29px 33px 154px 400px rgba(255, 255, 255, 0.527);
 }
