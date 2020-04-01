@@ -1,30 +1,32 @@
-.body{
-  font:'Alata', san serif;
+.body {
+  font: "Alata", san serif;
 }
 
-.navbar-nav > li{
-  padding-left:10px;
-  padding-right:10px;
+.navbar-nav > li {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.navbar-light .navbar-brand{
+.navbar-light .navbar-brand {
   color: rgb(1, 1, 70);
   font-size: 1.3em;
 }
 
-
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
   color: rgb(1, 1, 70);
   font-weight: bold;
   font-size: 1.3em;
 }
 
-.navbar-light .navbar-nav .nav-link{
-  color:  rgb(1, 1, 70);
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(1, 1, 70);
   font-size: 1.3em;
 }
 
-.navbar-expand-lg .navbar-collapse{
+.navbar-expand-lg .navbar-collapse {
   justify-content: flex-end;
 }
 
@@ -96,7 +98,7 @@
   justify-content: space-around;
   padding: 8em;
 }
-.green{
+.green {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -107,7 +109,7 @@
   height: 70vh;
 }
 
-.texto_parques p{
+.texto_parques p {
   text-align: justify;
   padding: 1vw 1vw 1vw 1vw;
 }
@@ -152,42 +154,39 @@
 /* Style the back side */
 .flip-card-back {
   background-color: #adb5bd;
-color: white;
-transform: rotateY(180deg);
-border-radius: 100px;
-display: flex;
-flex-direction: column;
-color: rgba(204, 114, 35, 0.84);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(240, 230, 139);
 }
 
 .flip-card-back .botanic {
   padding: 1px;
   margin: 23px 0px 0px 0px;
   font-size: 2rem;
-  font-family: 'Kaushan Script', cursive;
-
+  font-family: "Kaushan Script", cursive;
 }
 
 .flip-card-back .texto_2 {
-      padding-bottom: 0.9vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 53px 0px 0px 0px;
-      font-size: 1.3vw;
-      font-family: 'Kaushan Script', cursive;
+  padding-bottom: 0.9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 53px 0px 0px 0px;
+  font-size: 1.5em;
+  font-family: "Kaushan Script", cursive;
 }
-
 
 /* .flip-card-back p{
   font-size: 0,3rem;
 } */
 
-.flip-card-back a{
-  font-size: 1.1vw; 
+.flip-card-back a {
+  font-size: 1.5em;
   color: #fff;
-  font-family: 'Kaushan Script', cursive;
-
+  font-family: "Kaushan Script", cursive;
 }
 
 .texto_parques p::first-letter {
@@ -196,117 +195,121 @@ color: rgba(204, 114, 35, 0.84);
   line-height: 2vw;
 }
 
- /* Footer */ 
-  .footer-placing {
-    background-color:  rgb(9, 9, 107);
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    padding: 5px 5px;
-  }
-  
-  .footer-placing .footer-left p {
-    color: white;
-    font-size: 1em;
-    margin: 0;
-  }
-  /* Footer links */
-  
-  .footer-placing p.footer-links {
-    font-size: 1em;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0 0 10px;
-    padding: 0;
-    transition: ease .25s;
-  }
-  
-  .footer-placing p.footer-links a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-    transition: ease .25s;
-  }
-  
-  .footer-placing .footer-links a:before {
-    content: "·";
-    font-size: 20px;
-    left: 0;
-    color: #fff;
-    display: inline-block;
-    padding-right: 5px;
-  }
-  
-  .footer-placing .footer-links .link-1:before {
-    content: none;
-  }
-  
-  .footer-placing .footer-right {
-    float: right;
-    margin-top: 6px;
-    max-width: 180px;
-  }
-  
-  .footer-placing .footer-right a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-left: 3px;
-    transition:all .25s;
-  }
-  
-  .footer-placing .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
-  
-  .footer-placing p.footer-links a:hover{text-decoration:underline;}
-  .bg-blue{
-    background-color:none;
+/* Footer */
+.footer-placing {
+  background-color: rgb(9, 9, 107);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 5px 5px;
+}
+
+.footer-placing .footer-left p {
+  color: white;
+  font-size: 1em;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-placing p.footer-links {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-placing p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-placing .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-placing .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-placing .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-placing .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-placing .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-placing p.footer-links a:hover {
+  text-decoration: underline;
+}
+.bg-blue {
+  background-color: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .frase_arriba {
+    font-size: 5vw;
   }
 
-@media only screen and (max-width: 576px){
-  .frase_arriba{
-  font-size: 5vw;
-  }
-    
-  .nombre_seccion{
-  font-size: 15vw;
+  .nombre_seccion {
+    font-size: 15vw;
   }
 
-  .frase_abajo{
-  font-size: 5vw;
+  .frase_abajo {
+    font-size: 5vw;
   }
 
-  .contenido_izq{
-  height: 100vh;
+  .contenido_izq {
+    height: 100vh;
   }
-  .texto_parques p{
-  padding-bottom: 6vw;
-  text-align: justify;
-  padding-top: 3vw;
-  font-size: 5vw;
+  .texto_parques p {
+    padding-bottom: 6vw;
+    text-align: justify;
+    padding-top: 3vw;
+    font-size: 5vw;
   }
   .texto_parques p::first-letter {
-  float: left;
-  font-size: 17vw;
-  line-height: 14vw;
-
+    float: left;
+    font-size: 17vw;
+    line-height: 14vw;
   }
-  .texto_2{
-  padding-top: 5vw;
+  .texto_2 {
+    padding-top: 5vw;
   }
 
-  .green{
-    
+  .green {
     height: 100vh;
   }
 
   @media (max-width: 600px) {
-    .footer-placing .footer-left, .footer-distributed .footer-right {
+    .footer-placing .footer-left,
+    .footer-distributed .footer-right {
       text-align: center;
     }
     .footer-placing .footer-right {
