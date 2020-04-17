@@ -1,5 +1,6 @@
 .body {
   font: "Alata", san serif;
+  height: 100%;
 }
 
 .navbar-nav > li {
@@ -272,26 +273,28 @@
   background-color: none;
 }
 
-@media only screen and (max-width: 576px) {
+@media (max-width: 600px) {
   .frase_arriba {
-    font-size: 5vw;
+    font-size: 2em;
+    padding: 0 0.3em 0 0.3em;
   }
 
   .nombre_seccion {
-    font-size: 15vw;
+    font-size: 5em;
   }
 
   .frase_abajo {
-    font-size: 5vw;
+    font-size: 2em;
+    padding: 0 0.3em 0 0.3em;
   }
 
   .contenido_izq {
     height: 100vh;
   }
   .texto_parques p {
-    padding-bottom: 6vw;
+    padding-bottom: 1em 1em 1em 1em;
     text-align: justify;
-    padding-top: 3vw;
+    padding: 2.2em 1.5em 0 1em;
     font-size: 5vw;
   }
   .texto_parques p::first-letter {
@@ -307,17 +310,15 @@
     height: 100vh;
   }
 
-  @media (max-width: 600px) {
-    .footer-placing .footer-left,
-    .footer-distributed .footer-right {
-      text-align: center;
-    }
-    .footer-placing .footer-right {
-      float: none;
-      margin: 0 auto 20px;
-    }
-    .footer-placing .footer-left p.footer-links {
-      line-height: 1.8;
-    }
+  .footer-placing .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-placing .footer-right {
+    /* float: none; */
+    margin: 0 auto 20px;
+  }
+  .footer-placing .footer-left p.footer-links {
+    line-height: 1.8;
   }
 }
