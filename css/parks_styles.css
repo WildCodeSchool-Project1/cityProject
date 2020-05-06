@@ -1,6 +1,7 @@
 .body {
   font: "Alata", san serif;
   height: 100%;
+  font-size: 10px;
 }
 
 .navbar-nav > li {
@@ -37,10 +38,10 @@
   width: 100%; /* Full width */
 }
 
-.contenido_izq {
+.left_side {
   width: 50vw;
   height: 100vh;
-  background-image: url(./img/800px-Botanisk_have.jpg);
+  background-image: url(../img/800px-Botanisk_have.jpg);
   box-shadow: inset 29px 33px 154px 200px rgba(255, 255, 255, 0.57);
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,69 +51,37 @@
   flex-direction: column;
 }
 
-.frase_arriba {
+.section_name {
   width: fit-content;
   height: fit-content;
-  background-color: khaki;
-  border: 1px solid yellow;
-  font-family: "Alata", sans-serif;
-  font-size: 1.4vw;
-}
-
-.nombre_seccion {
-  width: fit-content;
-  height: fit-content;
-  font-size: 10vw;
+  font-size: 5rem;
   font-family: "Alata", sans-serif;
   font-style: italic;
   color: white;
   letter-spacing: -0.01em;
 }
 
-.frase_abajo {
-  width: fit-content;
-  height: fit-content;
-  background-color: khaki;
-  font-size: 1.4vw;
-  font-family: "Alata", sans-serif;
-  border: 1px solid yellow;
-  /* height: 25%; */
-}
-
-.contenido_drch {
+.right_side {
   width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
 }
 
-.flex-container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 8em;
-}
-.green {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom-left-radius: 100px;
-  border-top-left-radius: 100px;
-  width: 100%;
-  height: 70vh;
-}
-
-.texto_parques p {
+.parks_text {
+  margin: 4em 0 0 0;
   text-align: justify;
-  padding: 1vw 1vw 1vw 1vw;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.parks_text::first-letter {
+  text-transform: capitalize;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
@@ -120,7 +89,8 @@
   width: 180px;
   height: 180px;
   border-radius: 100px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  margin: 1rem auto; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -171,7 +141,7 @@
 }
 
 .flip-card-back .texto_2 {
-  padding-bottom: 0.9vw;
+  padding-bottom: 0.9em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,12 +160,6 @@
   font-family: "Kaushan Script", cursive;
 }
 
-.texto_parques p::first-letter {
-  float: left;
-  font-size: 4vw;
-  line-height: 2vw;
-}
-
 /* Footer */
 .footer-placing {
   background-color: rgb(9, 9, 107);
@@ -204,6 +168,7 @@
   width: 100%;
   text-align: left;
   padding: 5px 5px;
+  position: absolute;
 }
 
 .footer-placing .footer-left p {
@@ -272,53 +237,17 @@
 .bg-blue {
   background-color: none;
 }
-
-@media (max-width: 600px) {
-  .frase_arriba {
-    font-size: 2em;
-    padding: 0 0.3em 0 0.3em;
+@media only screen and (max-width: 576px) {
+  .section_name {
+    font-size: 7em;
   }
-
-  .nombre_seccion {
-    font-size: 5em;
+  .parks_text {
+    padding: 1em;
   }
-
-  .frase_abajo {
-    font-size: 2em;
-    padding: 0 0.3em 0 0.3em;
-  }
-
-  .contenido_izq {
-    height: 100vh;
-  }
-  .texto_parques p {
-    padding-bottom: 1em 1em 1em 1em;
-    text-align: justify;
-    padding: 2.2em 1.5em 0 1em;
-    font-size: 5vw;
-  }
-  .texto_parques p::first-letter {
-    float: left;
-    font-size: 17vw;
-    line-height: 14vw;
-  }
-  .texto_2 {
-    padding-top: 5vw;
-  }
-
-  .green {
-    height: 100vh;
-  }
-
-  .footer-placing .footer-left,
-  .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-placing .footer-right {
-    /* float: none; */
-    margin: 0 auto 20px;
-  }
-  .footer-placing .footer-left p.footer-links {
-    line-height: 1.8;
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
